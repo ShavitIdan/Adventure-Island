@@ -1,11 +1,19 @@
+using System.Collections;
 using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
     public float speed;
+    public float respawnTime = 5f;
+    private Vector3 deathPosition;
+    protected bool isDead = false;
+    private SpriteRenderer spriteRenderer;
+    private Collider2D collider2D;
 
     private void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        collider2D = GetComponent<Collider2D>();
         init();
     }
 
@@ -17,7 +25,7 @@ public abstract class Enemy : MonoBehaviour
 
     protected abstract void move();
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public virtual void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -25,14 +33,38 @@ public abstract class Enemy : MonoBehaviour
         }
     }
 
-    public void takeDamage(float damage)
+    public virtual void takeDamage(float damage)
     {
-        die();
+        if (!isDead)
+        {
+            
+            die();
+        }
+        
     }
 
     protected virtual void die()
     {
         Debug.Log("Enemy died.");
-        gameObject.SetActive(false);
+        deathPosition = transform.position;
+        isDead = true;
+        spriteRenderer.enabled = false;
+        collider2D.enabled = false;
+        StartCoroutine(RespawnTimer());
+    }
+    private IEnumerator RespawnTimer()
+    {
+        yield return new WaitForSeconds(respawnTime);
+        Respawn();
+    }
+
+    private void Respawn()
+    {
+        Debug.Log("Enemy respawned.");
+        transform.position = deathPosition;
+        isDead = false;
+        spriteRenderer.enabled = true;
+        collider2D.enabled = true;
+        init();
     }
 }

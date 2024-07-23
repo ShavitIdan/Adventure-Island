@@ -3,12 +3,10 @@ using UnityEngine;
 
 public class SC_FireSnake : Enemy
 {
-    public GameObject fireballPrefab; // Prefab of the fireball
-    public Transform firePoint; // Point from which the fireball will be shot
-    public float shootInterval = 2f; // Time between shots
-
-    private FireSnakeState currentState;
-    private float stateTimer;
+    public GameObject fireballPrefab;
+    public Transform firePoint;
+    public float shootInterval = 2f;
+    private Animator animator;
     public enum FireSnakeState
     {
         Idle,
@@ -27,7 +25,7 @@ public class SC_FireSnake : Enemy
         {
             Debug.LogError("Fire point is missing.");
         }
-        currentState = FireSnakeState.Idle;
+        animator = GetComponent<Animator>();
         StartCoroutine(ShootingRoutine());
     }
 
@@ -47,7 +45,7 @@ public class SC_FireSnake : Enemy
 
     private void Shoot()
     {
-        if (fireballPrefab != null && firePoint != null)
+        if (!isDead && fireballPrefab != null && firePoint != null)
         {
             GameObject fireBall = SC_FireBallPool.sharedInstance.GetPooledFireBall();
             fireBall.transform.position = firePoint.position;
@@ -59,16 +57,10 @@ public class SC_FireSnake : Enemy
                 float direction = 1;
                 if (transform != null)
                     direction = transform.localScale.x > 0 ? -1 : 1;
+                animator.SetTrigger("AttackTrigger");
                 scFireball.Shoot(direction );
             }
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            SC_PlayerController.instance.ChangePower(-SC_PlayerController.instance.powerController.maxPower);
-        }
-    }
 }

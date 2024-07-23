@@ -42,7 +42,7 @@ public class SC_Axe : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            collision.gameObject.SetActive(false);
+            collision.gameObject.GetComponent<Enemy>()?.takeDamage(1);
             DeactivateObject();
         }
 

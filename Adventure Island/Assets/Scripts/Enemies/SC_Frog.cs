@@ -1,20 +1,22 @@
 using System.Collections;
 using UnityEngine;
 
-public class SC_JumpingSnake : Enemy
+public class SC_Frog : Enemy
 {
-    public float jumpForce = 3f;
+    public float jumpForce = 3f; 
     public float jumpInterval = 4f;
     public float jumpHeightMultiplier = 1f;
 
     private Rigidbody2D rb;
     private Transform playerTransform;
     private bool isJumping = false;
+    private Animator animator;
 
     protected override void init()
     {
         base.init();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         if (rb == null)
         {
             Debug.LogError("Rigidbody2D component is missing.");
@@ -64,18 +66,19 @@ public class SC_JumpingSnake : Enemy
 
             if (direction.x > 0)
             {
-                transform.localScale = new Vector3(-1, 1, 1);
+                transform.localScale = new Vector3(-1, 1, 1); 
             }
             else
             {
-                transform.localScale = new Vector3(1, 1, 1);
+                transform.localScale = new Vector3(1, 1, 1); 
             }
 
             Vector2 jumpVector = new Vector2(direction.x * jumpForce, jumpHeightMultiplier * jumpForce);
-            rb.velocity = Vector2.zero;
+            rb.velocity = Vector2.zero; 
+            animator.SetTrigger("Jump");
             rb.AddForce(jumpVector, ForceMode2D.Impulse);
 
-            Debug.Log("snake jumped towards player with force: " + jumpVector);
+            Debug.Log("Frog jumped towards player with force: " + jumpVector);
             StartCoroutine(ResetJump());
         }
     }

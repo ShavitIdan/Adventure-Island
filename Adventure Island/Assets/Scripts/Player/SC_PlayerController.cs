@@ -11,6 +11,8 @@ public class SC_PlayerController : MonoBehaviour
     public SC_LifeController lifeController;
     private Animator anim;
 
+    private bool isImmune = true;
+
     private void Awake()
     {
         if (instance == null)
@@ -47,6 +49,15 @@ public class SC_PlayerController : MonoBehaviour
         powerController?.ResetPower();
     }
 
+    public void SetImmune(bool value)
+    {
+        isImmune = value;
+    }
+
+    public bool GetImmune()
+    {
+        return isImmune;
+    }
     public void ChangePower(float amount)
     {
         powerController.ChangePower(amount);
@@ -54,6 +65,11 @@ public class SC_PlayerController : MonoBehaviour
     public Animator GetAnimator()
     {
         return anim;
+    }
+
+    public GameObject getPlayer()
+    {
+        return player;
     }
 
     public void kill()

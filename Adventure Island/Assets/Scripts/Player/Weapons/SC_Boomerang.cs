@@ -72,7 +72,7 @@ public class SC_Boomerang : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            collision.gameObject.SetActive(false);
+            collision.gameObject.GetComponent<Enemy>()?.takeDamage(1);
             DeactivateObject();
         }
 
