@@ -5,6 +5,7 @@ using UnityEngine;
 public class SC_Movement : MonoBehaviour
 {
     public float speed;
+    public float jumpSpeed = 6f;
     private Rigidbody2D body;
     
     private bool grounded;
@@ -33,7 +34,7 @@ public class SC_Movement : MonoBehaviour
 
     private void Jump()
     {
-        body.velocity = new Vector2(body.velocity.x, speed);
+        body.velocity = new Vector2(body.velocity.x, jumpSpeed);
         SC_PlayerController.instance.GetAnimator().SetTrigger("Jump");
         grounded = false;
     }

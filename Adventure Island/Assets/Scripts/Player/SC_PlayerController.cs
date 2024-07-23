@@ -11,7 +11,7 @@ public class SC_PlayerController : MonoBehaviour
     public SC_LifeController lifeController;
     private Animator anim;
 
-    private bool isImmune = true;
+    private bool isImmune = false;
 
     private void Awake()
     {

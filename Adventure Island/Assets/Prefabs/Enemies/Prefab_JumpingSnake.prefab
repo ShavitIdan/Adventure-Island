@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5876101359458942303}
   - component: {fileID: 3986039343606665072}
   - component: {fileID: 2712967735910616276}
+  - component: {fileID: 8480723896971789029}
   m_Layer: 0
   m_Name: Prefab_JumpingSnake
   m_TagString: Enemy
@@ -147,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   respawnTime: 10
+  dropSystem: {fileID: 0}
   jumpForce: 2
   jumpInterval: 5
   jumpHeightMultiplier: 1.5
@@ -198,3 +200,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8480723896971789029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517330153639266827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3be211d30b5f148b68839902833a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUps: []
+  dropChance: 0.15

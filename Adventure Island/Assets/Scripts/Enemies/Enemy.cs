@@ -9,11 +9,13 @@ public abstract class Enemy : MonoBehaviour
     protected bool isDead = false;
     private SpriteRenderer spriteRenderer;
     private Collider2D collider2D;
+    public SC_DropSystem dropSystem;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         collider2D = GetComponent<Collider2D>();
+        dropSystem = GetComponent<SC_DropSystem>();
         init();
     }
 
@@ -29,7 +31,14 @@ public abstract class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SC_PlayerController.instance.kill();
+            if (!SC_PlayerController.instance.GetImmune())
+            {
+                SC_PlayerController.instance.kill();
+            }
+            else
+            {
+                takeDamage(1);
+            }
         }
     }
 
@@ -50,6 +59,8 @@ public abstract class Enemy : MonoBehaviour
         isDead = true;
         spriteRenderer.enabled = false;
         collider2D.enabled = false;
+
+        dropSystem?.TryDropPowerUp(deathPosition);
         StartCoroutine(RespawnTimer());
     }
     private IEnumerator RespawnTimer()

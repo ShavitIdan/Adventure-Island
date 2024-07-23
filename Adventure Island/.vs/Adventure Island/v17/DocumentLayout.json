@@ -3,23 +3,51 @@
   "WorkspaceRootPath": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|c:\\users\\shavi\\desktop\\dev\\unity 2\\adventure-island\\adventure island\\assets\\scripts\\enemies\\sc_ghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\sc_ghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|c:\\users\\shavi\\desktop\\dev\\unity 2\\adventure-island\\adventure island\\assets\\scripts\\player\\sc_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\sc_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|c:\\users\\shavi\\desktop\\dev\\unity 2\\adventure-island\\adventure island\\assets\\scripts\\sc_rockobstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sc_rockobstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|c:\\users\\shavi\\desktop\\dev\\unity 2\\adventure-island\\adventure island\\assets\\scripts\\sc_fruit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sc_fruit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\assets\\scripts\\player\\sc_playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\sc_playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|c:\\users\\shavi\\desktop\\dev\\unity 2\\adventure-island\\adventure island\\assets\\scripts\\sc_fireobstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sc_fireobstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\assets\\scripts\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|c:\\users\\shavi\\desktop\\dev\\unity 2\\adventure-island\\adventure island\\assets\\scripts\\player\\sc_playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\sc_playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\assets\\scripts\\sc_dropsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sc_dropsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\assets\\scripts\\pickables\\sc_fairy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pickables\\sc_fairy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\assets\\scripts\\pickables\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pickables\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\assets\\scripts\\enemies\\sc_ghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\sc_ghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\assets\\scripts\\enemies\\enemyattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemyattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|c:\\users\\shavi\\desktop\\dev\\unity 2\\adventure-island\\adventure island\\assets\\scripts\\enemies\\sc_firesnake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\assets\\scripts\\enemies\\sc_firesnake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02A0BFA4-1A60-9D69-D736-588964EA750C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\sc_firesnake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -82,24 +110,100 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SC_Movement.cs",
+              "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Player\\SC_Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\SC_Movement.cs",
+              "ToolTip": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Player\\SC_Movement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\SC_Movement.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCQAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T22:26:05.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "SC_Fruit.cs",
+              "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\SC_Fruit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SC_Fruit.cs",
+              "ToolTip": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\SC_Fruit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SC_Fruit.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T22:22:47.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SC_RockObstacle.cs",
+              "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\SC_RockObstacle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SC_RockObstacle.cs",
+              "ToolTip": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\SC_RockObstacle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SC_RockObstacle.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBIAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T22:01:37.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SC_FireObstacle.cs",
+              "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\SC_FireObstacle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SC_FireObstacle.cs",
+              "ToolTip": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\SC_FireObstacle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SC_FireObstacle.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAA9wAQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T20:20:25.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SC_Fairy.cs",
+              "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\PickAbles\\SC_Fairy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PickAbles\\SC_Fairy.cs",
+              "ToolTip": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\PickAbles\\SC_Fairy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PickAbles\\SC_Fairy.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T19:10:47.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SC_PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Player\\SC_PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\SC_PlayerController.cs",
               "ToolTip": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Player\\SC_PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\SC_PlayerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAgAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAA7wDwAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T18:02:51.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "SC_DropSystem.cs",
+              "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\SC_DropSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SC_DropSystem.cs",
+              "ToolTip": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\SC_DropSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SC_DropSystem.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwA4AAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T19:20:57.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "SC_Ghost.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Enemies\\SC_Ghost.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\SC_Ghost.cs",
@@ -107,12 +211,35 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\SC_Ghost.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAqwDQAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T17:55:01.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T17:55:01.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Enemies\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemy.cs",
+              "ToolTip": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Enemies\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemy.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T10:25:47.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PowerUp.cs",
+              "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\PickAbles\\PowerUp.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PickAbles\\PowerUp.cs",
+              "ToolTip": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\PickAbles\\PowerUp.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PickAbles\\PowerUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T19:13:27.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "SC_FireSnake.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Enemies\\SC_FireSnake.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\SC_FireSnake.cs",
@@ -120,12 +247,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\SC_FireSnake.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAkwDsAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T15:10:05.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T15:10:05.71Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "EnemyAttack.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Enemies\\EnemyAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EnemyAttack.cs",
@@ -133,25 +259,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemies\\EnemyAttack.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T13:43:14.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T13:43:14.007Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Enemies\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\Enemy.cs",
-              "ToolTip": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Enemies\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\Enemy.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwCAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T10:25:47.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "SC_Axe.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Player\\Weapons\\SC_Axe.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Weapons\\SC_Axe.cs",
@@ -163,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "SC_Boomerang.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Player\\Weapons\\SC_Boomerang.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Weapons\\SC_Boomerang.cs",
@@ -175,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "SC_FireBall.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\SC_FireBall.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SC_FireBall.cs",
@@ -187,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "SC_Spider.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Enemies\\SC_Spider.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\SC_Spider.cs",
@@ -199,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "IPickAble.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Interfaces\\IPickAble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Interfaces\\IPickAble.cs",
@@ -211,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "AxeBuilder.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Builders\\AxeBuilder.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Builders\\AxeBuilder.cs",
@@ -223,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "SC_AxePool.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\PoolingSystem\\SC_AxePool.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PoolingSystem\\SC_AxePool.cs",
@@ -235,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "SC_PlayerPowerPool.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\PoolingSystem\\SC_PlayerPowerPool.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PoolingSystem\\SC_PlayerPowerPool.cs",
@@ -247,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "SC_PlayerPower.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\SC_PlayerPower.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SC_PlayerPower.cs",
@@ -259,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "GroundedExtantion.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Extensions\\GroundedExtantion.cs",
               "RelativeDocumentMoniker": "Assets\\Extensions\\GroundedExtantion.cs",
@@ -271,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "SC_Jump.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\SC_Jump.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SC_Jump.cs",
@@ -283,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "SC_Movement.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\SC_Movement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SC_Movement.cs",
@@ -295,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "SC_SpriteLoader.cs",
               "DocumentMoniker": "C:\\Users\\shavi\\Desktop\\Dev\\unity 2\\Adventure-Island\\Adventure Island\\Assets\\Scripts\\Globals\\SC_SpriteLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Globals\\SC_SpriteLoader.cs",
