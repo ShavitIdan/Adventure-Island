@@ -55,4 +55,9 @@ public class SC_PlayerController : MonoBehaviour
     {
         return anim;
     }
+
+    public void kill()
+    {
+        OnPlayerDeath();
+    }
 }
