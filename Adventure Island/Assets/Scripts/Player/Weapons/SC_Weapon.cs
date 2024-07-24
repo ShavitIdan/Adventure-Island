@@ -4,21 +4,12 @@ using UnityEngine;
 
 public class SC_Weapon : MonoBehaviour
 {
-    public SC_AxeWeapon _axeWeapon;
-    public SC_BoomerangWeapon _boomerangWeapon;
-
-
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X) && _axeWeapon != null)
+        if (Input.GetKeyDown(KeyCode.X) )
         {
-            _axeWeapon.Shoot();
-        }
-        if (Input.GetKeyDown(KeyCode.Z) && _boomerangWeapon != null)
-        {
-
-            _boomerangWeapon.Shoot();
-
+            SC_PlayerController.instance.GetWeapon()?.Shoot();
+            SC_PlayerController.instance.GetMount()?.Attack();
         }
     }
 

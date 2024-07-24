@@ -35,7 +35,7 @@ public class SC_Movement : MonoBehaviour
     private void Jump()
     {
         body.velocity = new Vector2(body.velocity.x, jumpSpeed);
-        SC_PlayerController.instance.GetAnimator().SetTrigger("Jump");
+        //SC_PlayerController.instance.GetAnimator().SetTrigger("Jump");
         grounded = false;
     }
 

@@ -5,11 +5,10 @@ using UnityEngine;
 public class SC_AxeWeapon : MonoBehaviour, IWeapon
 {
     public GameObject _axe;
-    private bool _isEquip = true;
 
     public void Shoot()
     {
-        if (_isEquip && _axe != null)
+        if ( _axe != null)
         {
             GameObject axe = SC_AxePool.sharedInstance.GetPooledAxe();
             axe.transform.position = transform.position;
@@ -27,13 +26,5 @@ public class SC_AxeWeapon : MonoBehaviour, IWeapon
         }
     }
 
-    public void Equip()
-    {
-        _isEquip = true;
-    }
 
-    public void UnEquip()
-    {
-        _isEquip = false;
-    }
 }

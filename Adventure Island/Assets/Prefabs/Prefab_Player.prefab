@@ -188,6 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  jumpSpeed: 6
 --- !u!95 &2363084882872154944
 Animator:
   serializedVersion: 5
@@ -311,8 +312,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8218670345875122973}
   - component: {fileID: 3268793185692971803}
-  - component: {fileID: 7193195364342523638}
-  - component: {fileID: 6824965742143433800}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -347,31 +346,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3fc025c1de4d544eb7539fa5686ecfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _axeWeapon: {fileID: 7193195364342523638}
-  _boomerangWeapon: {fileID: 6824965742143433800}
---- !u!114 &7193195364342523638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5354649237883328418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2ec89d1b8d672b4cbc973571fbac657, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _axe: {fileID: 792217631143537922, guid: 1f2ddb62fe4f0cf4299da5f7c855b566, type: 3}
---- !u!114 &6824965742143433800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5354649237883328418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 283206d933f17a54992bcb54a049d63f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _boomerangPrefab: {fileID: 6822413112863140381, guid: bec2a9e704a4e4b40916eb65ff5ef325, type: 3}

@@ -6,11 +6,10 @@ public class SC_BoomerangWeapon : MonoBehaviour, IWeapon
 {
     public GameObject _boomerangPrefab;
     private GameObject _activeBoomerang;
-    private bool _isEquip = true;
 
     public void Shoot()
     {
-        if (_isEquip && _boomerangPrefab != null && _activeBoomerang == null)
+        if (_boomerangPrefab != null && _activeBoomerang == null)
         {
             _activeBoomerang = Instantiate(_boomerangPrefab, transform.position, Quaternion.identity);
             _activeBoomerang.SetActive(true);
@@ -32,7 +31,6 @@ public class SC_BoomerangWeapon : MonoBehaviour, IWeapon
 
     private void HandleBoomerangDeactivation()
     {
-        // Unsubscribe from the event to avoid potential memory leaks
         if (_activeBoomerang != null)
         {
             SC_Boomerang scBoomerang = _activeBoomerang.GetComponent<SC_Boomerang>();
@@ -45,13 +43,4 @@ public class SC_BoomerangWeapon : MonoBehaviour, IWeapon
         _activeBoomerang = null;
     }
 
-    public void Equip()
-    {
-        _isEquip = true;
-    }
-
-    public void UnEquip()
-    {
-        _isEquip = false;
-    }
 }
