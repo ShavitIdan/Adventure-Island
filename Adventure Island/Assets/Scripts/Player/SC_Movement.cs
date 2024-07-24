@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SC_Movement : MonoBehaviour
@@ -7,7 +5,7 @@ public class SC_Movement : MonoBehaviour
     public float speed;
     public float jumpSpeed = 6f;
     private Rigidbody2D body;
-    
+
     private bool grounded;
 
     private void Awake()
@@ -21,9 +19,9 @@ public class SC_Movement : MonoBehaviour
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
         if (horizontalInput > 0.01f)
-            transform.localScale = Vector3.one;
+            transform.rotation = Quaternion.Euler(0, 0, 0); 
         else if (horizontalInput < -0.01f)
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.rotation = Quaternion.Euler(0, 180, 0);   
 
         if (Input.GetKey(KeyCode.Space) && grounded)
             Jump();
@@ -35,7 +33,6 @@ public class SC_Movement : MonoBehaviour
     private void Jump()
     {
         body.velocity = new Vector2(body.velocity.x, jumpSpeed);
-        //SC_PlayerController.instance.GetAnimator().SetTrigger("Jump");
         grounded = false;
     }
 
@@ -44,5 +41,4 @@ public class SC_Movement : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
             grounded = true;
     }
-
 }
