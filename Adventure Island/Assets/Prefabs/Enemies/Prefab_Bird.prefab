@@ -183,5 +183,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea3be211d30b5f148b68839902833a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUps: []
+  powerUps:
+  - {fileID: 9019191274448120751, guid: 87716e0ba6864fd47bc4b493883eb701, type: 3}
+  - {fileID: 6336806646012763423, guid: 47d4f0bd0bd1e5d46b6947b9c3086f99, type: 3}
+  - {fileID: 1551599279740130251, guid: 72eb1d04c04425a4ab861ee855c5ea5f, type: 3}
+  - {fileID: 5200010536218320800, guid: e362f199a40afbc408c63f750efd55e1, type: 3}
+  - {fileID: 3480674381227293749, guid: e1e1a3b07dbdcaf4da0d92bc60ea1a96, type: 3}
+  - {fileID: 5925123138959861065, guid: 5b04325e110330248851c721affc779f, type: 3}
   dropChance: 0.15

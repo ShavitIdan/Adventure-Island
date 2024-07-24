@@ -8,10 +8,11 @@ public class SC_PlayerController : MonoBehaviour
 {
     static public SC_PlayerController instance;
     public GameObject player;
-    private IWeapon weapon;
+    private IWeapon _weapon;
     private Mount _mount;
     public SC_PowerController powerController;
     public SC_LifeController lifeController;
+    public Transform FirePoint;
     private Animator anim;
 
     private bool isImmune = false;
@@ -49,10 +50,9 @@ public class SC_PlayerController : MonoBehaviour
     {
         if (_mount != null)
         {
-            _mount.Dismount();
-            _mount = null;
+            SetMount(null);
         }
-        if (weapon != null)
+        if (_weapon != null)
         {
             EquipWeapon(null);
         }
@@ -63,12 +63,16 @@ public class SC_PlayerController : MonoBehaviour
 
     public void EquipWeapon(IWeapon weapon)
     {
-        this.weapon = weapon;
+        if (weapon != null && _mount != null)
+        {
+            SetMount(null); 
+        }
+        _weapon = weapon;
     }
 
     public IWeapon GetWeapon()
     {
-        return weapon;
+        return _weapon;
     }
 
     public void SetMount(Mount mount)
@@ -76,14 +80,13 @@ public class SC_PlayerController : MonoBehaviour
         if (_mount != null)
         {
             _mount.Dismount();
-            _mount = null;
         }
-        if (mount != null)
+        if (mount != null && _weapon != null)
         {
-            mount.MountUp();
-            _mount = mount;
+            EquipWeapon(null); 
         }
-        
+        _mount = mount;
+        _mount?.MountUp();
     }
 
     public Mount GetMount()
@@ -108,6 +111,10 @@ public class SC_PlayerController : MonoBehaviour
         return anim;
     }
 
+    public Transform GetWeaponTransform()
+    {
+        return FirePoint;
+    }
     public GameObject getPlayer()
     {
         return player;

@@ -6,6 +6,10 @@ public class SC_AxeWeapon : MonoBehaviour, IWeapon
 {
     public GameObject _axe;
 
+    public SC_AxeWeapon(GameObject axePrefab)
+    {
+        _axe = axePrefab;
+    }
     public void Shoot()
     {
         if ( _axe != null)
