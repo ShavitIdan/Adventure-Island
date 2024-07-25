@@ -103,7 +103,6 @@ GameObject:
   - component: {fileID: 8312451586533129176}
   - component: {fileID: 5101728452870848824}
   - component: {fileID: 4859294726851909248}
-  - component: {fileID: 1282612256453249338}
   m_Layer: 0
   m_Name: Prefab_FireSnake
   m_TagString: Enemy
@@ -239,7 +238,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   respawnTime: 5
-  dropSystem: {fileID: 0}
   fireballPrefab: {fileID: 7269583412969133091, guid: 613937fb95e1ea24f8cf76bc89101fd7, type: 3}
   firePoint: {fileID: 6245964636185414824}
   shootInterval: 4
@@ -264,26 +262,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1282612256453249338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3510512139953934273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea3be211d30b5f148b68839902833a06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerUps:
-  - {fileID: 9019191274448120751, guid: 87716e0ba6864fd47bc4b493883eb701, type: 3}
-  - {fileID: 6336806646012763423, guid: 47d4f0bd0bd1e5d46b6947b9c3086f99, type: 3}
-  - {fileID: 1551599279740130251, guid: 72eb1d04c04425a4ab861ee855c5ea5f, type: 3}
-  - {fileID: 5200010536218320800, guid: e362f199a40afbc408c63f750efd55e1, type: 3}
-  - {fileID: 3480674381227293749, guid: e1e1a3b07dbdcaf4da0d92bc60ea1a96, type: 3}
-  - {fileID: 5925123138959861065, guid: 5b04325e110330248851c721affc779f, type: 3}
-  dropChance: 0.15
 --- !u!1 &5501626269889900151
 GameObject:
   m_ObjectHideFlags: 0

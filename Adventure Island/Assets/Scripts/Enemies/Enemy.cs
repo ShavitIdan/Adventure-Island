@@ -9,15 +9,13 @@ public abstract class Enemy : MonoBehaviour
     protected bool isDead = false;
     private SpriteRenderer spriteRenderer;
     private Collider2D collider2D;
-    public SC_DropSystem dropSystem;
-    private bool playerInRange = false; 
+    private bool playerInRange = false;
     private GameObject player;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         collider2D = GetComponent<Collider2D>();
-        dropSystem = GetComponent<SC_DropSystem>();
         init();
     }
 
@@ -67,7 +65,8 @@ public abstract class Enemy : MonoBehaviour
         spriteRenderer.enabled = false;
         collider2D.enabled = false;
 
-        dropSystem?.TryDropPowerUp(deathPosition);
+        SC_DropSystem.instance.TryDropPickable(deathPosition); 
+
         StartCoroutine(RespawnTimer());
     }
 

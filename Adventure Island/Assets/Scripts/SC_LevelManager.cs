@@ -1,5 +1,6 @@
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SC_LevelManager : MonoBehaviour
 {
@@ -79,11 +80,13 @@ public class SC_LevelManager : MonoBehaviour
 
     public void ResetGame()
     {
-        SC_PlayerController.instance.lifeController.ResetLives();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        /*SC_PlayerController.instance.lifeController.ResetLives();
         currentLevelIndex = 0;
         LoadLevel(currentLevelIndex);
         SC_PlayerController.instance.getPlayer().gameObject.SetActive(true);
-        SC_UIManager.instance.HideAllScreens();
+        SC_UIManager.instance.HideAllScreens();*/
     }
 
     public Vector3 GetCurrentLevelRespawnPoint()

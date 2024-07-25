@@ -3,20 +3,12 @@ using UnityEngine;
 public class SC_Egg : MonoBehaviour
 {
     public Animator animator;
-    public SC_DropSystem dropSystem;
     private int touchCount = 0;
     private bool isCracked = false;
 
     private void Awake()
     {
-        if (dropSystem == null)
-        {
-            dropSystem = GetComponent<SC_DropSystem>();
-            if (dropSystem == null)
-            {
-                Debug.LogError("DropSystem component is missing.");
-            }
-        }
+        
 
         if (animator == null)
         {
@@ -46,7 +38,7 @@ public class SC_Egg : MonoBehaviour
         }
         else if (touchCount == 2)
         {
-            dropSystem.TryDropPowerUp(transform.position);
+            SC_DropSystem.instance.DropPickable(transform.position);
             Destroy(gameObject); 
         }
     }
