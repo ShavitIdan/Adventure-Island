@@ -17,9 +17,8 @@ public class SC_BoomerangWeapon : MonoBehaviour, IWeapon
             SC_Boomerang scBoomerang = _activeBoomerang.GetComponent<SC_Boomerang>();
             if (scBoomerang != null)
             {
-                float direction = 1;
-                if (transform.parent != null)
-                    direction = transform.parent.localScale.x;
+                float direction = SC_PlayerController.instance.getPlayer().transform.eulerAngles.y == 0 ? 1 : -1;
+
                 SC_PlayerController.instance.GetAnimator().SetTrigger("ThrowTrigger");
                 scBoomerang.Shoot(direction);
 
@@ -27,6 +26,7 @@ public class SC_BoomerangWeapon : MonoBehaviour, IWeapon
             }
         }
     }
+
 
 
     private void HandleBoomerangDeactivation()

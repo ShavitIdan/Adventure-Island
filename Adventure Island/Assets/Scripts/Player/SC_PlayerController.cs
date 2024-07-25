@@ -1,7 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Xml.Serialization;
 using UnityEngine;
 
 public class SC_PlayerController : MonoBehaviour
@@ -14,7 +12,6 @@ public class SC_PlayerController : MonoBehaviour
     public SC_LifeController lifeController;
     public Transform FirePoint;
     private Animator anim;
-
     private bool isImmune = false;
 
     private void Awake()
@@ -46,7 +43,7 @@ public class SC_PlayerController : MonoBehaviour
         }
     }
 
-    private void OnPlayerDeath()
+    public void OnPlayerDeath()
     {
         if (_mount != null)
         {
@@ -56,16 +53,26 @@ public class SC_PlayerController : MonoBehaviour
         {
             EquipWeapon(null);
         }
-        player.GetComponent<SC_ResetPosition>()?.OnResetPosition();
+
         lifeController?.LoseLife();
         powerController?.ResetPower();
+
+        if (lifeController.GetLives() > 0)
+        {
+            Respawn(SC_LevelManager.instance.GetCurrentLevelRespawnPoint());
+        }
+        else
+        {
+            SC_LevelManager.instance.GameOver();
+
+        }
     }
 
     public void EquipWeapon(IWeapon weapon)
     {
         if (weapon != null && _mount != null)
         {
-            SetMount(null); 
+            SetMount(null);
         }
         _weapon = weapon;
     }
@@ -83,7 +90,7 @@ public class SC_PlayerController : MonoBehaviour
         }
         if (mount != null && _weapon != null)
         {
-            EquipWeapon(null); 
+            EquipWeapon(null);
         }
         _mount = mount;
         _mount?.MountUp();
@@ -128,9 +135,13 @@ public class SC_PlayerController : MonoBehaviour
             _mount = null;
         }
         else
+        {
             OnPlayerDeath();
+        }
     }
 
-
-
+    public void Respawn(Vector3 position)
+    {
+        player.transform.position = position;
+    }
 }

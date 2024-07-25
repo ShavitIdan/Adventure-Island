@@ -81,7 +81,6 @@ public class SC_Boomerang : MonoBehaviour
             DeactivateObject();
         }
 
-        // If the boomerang hits the player, deactivate it
         if (collision.gameObject.tag == "Player" && isReturning)
         {
             DeactivateObject();

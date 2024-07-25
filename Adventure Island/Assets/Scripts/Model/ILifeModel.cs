@@ -5,7 +5,7 @@ using System;
 
 public interface ILifeModel
 {
-    int Lives { get; }
+    int Lives { set; get;}
     void LoseLife();
     void GainLife();
     event Action OnLifeChanged;

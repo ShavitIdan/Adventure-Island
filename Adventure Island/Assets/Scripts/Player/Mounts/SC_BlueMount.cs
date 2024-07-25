@@ -30,12 +30,14 @@ public class SC_BlueMount : Mount
 
     private IEnumerator PerformSwingAttack()
     {
-        yield return new WaitForSeconds(0.1f); 
+        yield return new WaitForSeconds(0.1f);
 
         Vector3 attackPosition = attackPoint.position;
-        float direction = SC_PlayerController.instance.getPlayer().transform.localScale.x;
+
+        float direction = SC_PlayerController.instance.getPlayer().transform.eulerAngles.y == 0 ? 1 : -1;
         attackPosition.x += 0.5f * direction;
 
         Instantiate(swingAttackPrefab, attackPosition, Quaternion.identity);
     }
+
 }

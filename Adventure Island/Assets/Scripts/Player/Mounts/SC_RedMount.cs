@@ -32,13 +32,14 @@ public class SC_RedMount : Mount
     {
         if (projectilePrefab != null && firePoint != null)
         {
-            GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+            GameObject projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
             SC_RedMountProjectile redMountProjectile = projectile.GetComponent<SC_RedMountProjectile>();
             if (redMountProjectile != null)
             {
-                float direction = SC_PlayerController.instance.getPlayer().transform.localScale.x;
+                float direction = SC_PlayerController.instance.getPlayer().transform.eulerAngles.y == 0 ? 1 : -1;
                 redMountProjectile.Shoot(direction);
             }
         }
     }
+
 }

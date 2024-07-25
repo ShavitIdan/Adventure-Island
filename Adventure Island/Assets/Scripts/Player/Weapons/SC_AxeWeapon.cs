@@ -12,7 +12,7 @@ public class SC_AxeWeapon : MonoBehaviour, IWeapon
     }
     public void Shoot()
     {
-        if ( _axe != null)
+        if (_axe != null)
         {
             GameObject axe = SC_AxePool.sharedInstance.GetPooledAxe();
             axe.transform.position = transform.position;
@@ -21,14 +21,14 @@ public class SC_AxeWeapon : MonoBehaviour, IWeapon
             SC_Axe scAxe = axe.GetComponent<SC_Axe>();
             if (scAxe != null)
             {
-                float direction = 1;
-                if (transform.parent != null)
-                    direction = transform.parent.localScale.x;
+                float direction = SC_PlayerController.instance.getPlayer().transform.eulerAngles.y == 0 ? 1 : -1;
+
                 SC_PlayerController.instance.GetAnimator().SetTrigger("ThrowTrigger");
                 scAxe.Shoot(direction);
             }
         }
     }
+
 
 
 }

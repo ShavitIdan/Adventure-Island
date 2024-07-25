@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4595517554915575228}
   m_Layer: 8
   m_Name: Prefab_GreenMountAttackRing
-  m_TagString: Untagged
+  m_TagString: MountAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

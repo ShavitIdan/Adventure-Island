@@ -6,6 +6,8 @@ public class LifeModel : ILifeModel
     private int lives;
     public int Lives => lives;
 
+    int ILifeModel.Lives { get => lives; set { lives = value; OnLifeChanged?.Invoke();} }
+
     public event Action OnLifeChanged;
     public event Action OnPlayerDeath;
 

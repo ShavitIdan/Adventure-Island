@@ -53,4 +53,9 @@ public class SC_LifeController : MonoBehaviour
     {
         return model.Lives;
     }
+
+    public void ResetLives()
+    {
+        model.Lives = initialLives;
+    }
 }

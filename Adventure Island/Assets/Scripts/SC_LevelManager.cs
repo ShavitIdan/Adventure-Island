@@ -1,16 +1,15 @@
+using Cinemachine;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SC_LevelManager : MonoBehaviour
 {
     public static SC_LevelManager instance;
-    public GameObject[] levels; // Array of levels
+    public GameObject[] levels; 
     public int currentLevelIndex = 0;
     public Transform[] respawnPoints;
-    public GameObject victoryScreen;
-    public GameObject gameOverScreen;
-    private int playerLives;
-/*
+    public CinemachineConfiner2D cinemachineConfiner;
+    public Collider2D[] confinerColliders;
+
     private void Awake()
     {
         if (instance == null)
@@ -25,7 +24,6 @@ public class SC_LevelManager : MonoBehaviour
 
     private void Start()
     {
-        playerLives = SC_PlayerController.instance.lifeController.GetLives();
         LoadLevel(currentLevelIndex);
     }
 
@@ -39,6 +37,14 @@ public class SC_LevelManager : MonoBehaviour
             }
             currentLevelIndex = index;
             SC_PlayerController.instance.Respawn(respawnPoints[index].position);
+
+            if (cinemachineConfiner != null && index < confinerColliders.Length)
+            {
+                cinemachineConfiner.m_BoundingShape2D = confinerColliders[index];
+            }
+
+            // Hide UI screens on level load
+            SC_UIManager.instance.HideAllScreens();
         }
     }
 
@@ -56,38 +62,32 @@ public class SC_LevelManager : MonoBehaviour
 
     public void Victory()
     {
-        victoryScreen.SetActive(true);
-        playerController.gameObject.SetActive(false);
+        SC_UIManager.instance.ShowVictoryScreen();
+        SC_PlayerController.instance.getPlayer().gameObject.SetActive(false);
     }
 
     public void GameOver()
     {
-        gameOverScreen.SetActive(true);
-        playerController.gameObject.SetActive(false);
+        SC_UIManager.instance.ShowGameOverScreen();
+        SC_PlayerController.instance.getPlayer().gameObject.SetActive(false);
     }
 
     public void PlayerDied()
     {
-        playerLives--;
-        if (playerLives > 0)
-        {
-            playerController.Respawn(respawnPoints[currentLevelIndex].position);
-        }
-        else
-        {
-            GameOver();
-        }
+        SC_PlayerController.instance.OnPlayerDeath();
     }
 
     public void ResetGame()
     {
-        playerLives = playerController.lifeController.GetLives();
+        SC_PlayerController.instance.lifeController.ResetLives();
         currentLevelIndex = 0;
         LoadLevel(currentLevelIndex);
-        playerController.gameObject.SetActive(true);
-        gameOverScreen.SetActive(false);
-        victoryScreen.SetActive(false);
+        SC_PlayerController.instance.getPlayer().gameObject.SetActive(true);
+        SC_UIManager.instance.HideAllScreens();
     }
-*/
-}
 
+    public Vector3 GetCurrentLevelRespawnPoint()
+    {
+        return respawnPoints[currentLevelIndex].position;
+    }
+}
