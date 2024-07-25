@@ -31,7 +31,8 @@ public class SC_Frog : Enemy
 
     private void Update()
     {
-        if (!isDead && !isJumping)
+
+        if (!isDead && GetPlayerInRange() &&!isJumping )
         {
             move();
         }
@@ -45,7 +46,7 @@ public class SC_Frog : Enemy
     {
         while (true)
         {
-            if (!isDead)
+            if (!isDead && GetPlayerInRange())
             {
                 yield return new WaitForSeconds(jumpInterval);
                 Jump();

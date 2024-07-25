@@ -30,9 +30,9 @@ public class SpiderEnemy : Enemy
 
     private void Update()
     {
-        move();
+            move();
     }
-
+         
     protected override void move()
     {
         switch (currentState)

@@ -10,6 +10,8 @@ public abstract class Enemy : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Collider2D collider2D;
     public SC_DropSystem dropSystem;
+    private bool playerInRange = false; 
+    private GameObject player;
 
     private void Awake()
     {
@@ -24,6 +26,13 @@ public abstract class Enemy : MonoBehaviour
         Debug.Log("Enemy initialized.");
     }
 
+    private void Update()
+    {
+        if (!isDead && playerInRange)
+        {
+            move();
+        }
+    }
 
     protected abstract void move();
 
@@ -46,10 +55,8 @@ public abstract class Enemy : MonoBehaviour
     {
         if (!isDead)
         {
-            
             die();
         }
-        
     }
 
     protected virtual void die()
@@ -63,6 +70,7 @@ public abstract class Enemy : MonoBehaviour
         dropSystem?.TryDropPowerUp(deathPosition);
         StartCoroutine(RespawnTimer());
     }
+
     private IEnumerator RespawnTimer()
     {
         yield return new WaitForSeconds(respawnTime);
@@ -77,5 +85,16 @@ public abstract class Enemy : MonoBehaviour
         spriteRenderer.enabled = true;
         collider2D.enabled = true;
         init();
+    }
+
+    public void SetPlayerInRange(bool inRange, GameObject player)
+    {
+        playerInRange = inRange;
+        this.player = player;
+    }
+
+    public bool GetPlayerInRange()
+    {
+        return playerInRange;
     }
 }

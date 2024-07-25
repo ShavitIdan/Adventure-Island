@@ -130,4 +130,7 @@ public class SC_PlayerController : MonoBehaviour
         else
             OnPlayerDeath();
     }
+
+
+
 }

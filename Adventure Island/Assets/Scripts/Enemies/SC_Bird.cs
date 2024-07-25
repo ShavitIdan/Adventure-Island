@@ -24,7 +24,8 @@ public class SC_Bird : Enemy
 
     private void Update()
     {
-        move();
+        if (!isDead && GetPlayerInRange())
+            move();
     }
 
     protected override void move()

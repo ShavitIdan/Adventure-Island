@@ -19,7 +19,7 @@ public class SC_Ghost : Enemy
 
     private void Update()
     {
-        if (!isDead)
+        if (!isDead && GetPlayerInRange())
         {
             move();
         }

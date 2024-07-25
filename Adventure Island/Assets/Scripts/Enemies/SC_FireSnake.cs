@@ -38,8 +38,15 @@ public class SC_FireSnake : Enemy
     {
         while (true)
         {
-            yield return new WaitForSeconds(shootInterval);
-            Shoot();
+            if (!isDead && GetPlayerInRange())
+            {
+                yield return new WaitForSeconds(shootInterval);
+                Shoot();
+            }
+            else
+            {
+                yield return null;
+            }
         }
     }
 

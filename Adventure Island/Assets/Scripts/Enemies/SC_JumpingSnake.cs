@@ -29,7 +29,7 @@ public class SC_JumpingSnake : Enemy
 
     private void Update()
     {
-        if (!isDead && !isJumping)
+        if (!isDead && GetPlayerInRange() && !isJumping)
         {
             move();
         }
@@ -43,7 +43,7 @@ public class SC_JumpingSnake : Enemy
     {
         while (true)
         {
-            if (!isDead)
+            if (!isDead && GetPlayerInRange())
             {
                 yield return new WaitForSeconds(jumpInterval);
                 Jump();

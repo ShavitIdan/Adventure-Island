@@ -48,4 +48,9 @@ public class SC_LifeController : MonoBehaviour
     {
         model.GainLife();
     }
+
+    public int GetLives()
+    {
+        return model.Lives;
+    }
 }
